@@ -269,10 +269,12 @@ text-align: end;
 
 .footer-banner-image{
   position: absolute;
+  width: 30%;
+  height: 100%;
   /* top: -35%;
   left: 8%; */
-  top: -25%;
-  left: 25%;
+  top: -5%;
+  right: 25%;
 }
 
 .banner-desc .right{
