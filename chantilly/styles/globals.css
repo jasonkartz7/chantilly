@@ -50,7 +50,7 @@ width: 100%;
 }
 
 .track {
-  position: absolute;
+  position: flex;
   white-space: nowrap;
   will-change: transform;
   animation: marquee 15s linear infinite;
@@ -125,7 +125,7 @@ span.text-red {
 
 .product-image{
   border-radius: 15px;
- background-color: #ebebeb;
+  background-color: #ebebeb;
   transform: scale(1, 1);
   transition: transform 0.5s ease;
 }
@@ -460,18 +460,18 @@ text-align: end;
 }
 
 .product-detail-container{
-  display: flex;
- gap: 40px;
- margin: 40px;
- margin-top: 60px;
- color: #324d67;
+  display: inline-block;
+  gap: 40px;
+  margin: 40px ;
+  margin-top: 60px;
+  color: #324d67;
 }
 
 .product-detail-image{
   border-radius: 15px;
   background-color: #ebebeb;
-  width: 400px;
-  height: 400px;
+  width: 300px;
+  height: 300px;
   cursor: pointer;
   transition: .3s ease-in-out;
 }
@@ -480,17 +480,20 @@ text-align: end;
 }
 
 .small-images-container{
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
+  display: inline-block;
+  width: fit-content;
+  padding: 5px;
+
 }
 
 .small-image{
   border-radius: 8px;
   background-color: #ebebeb;
-  width: 70px;
+  width: 80px;
   height: 70px;
   cursor: pointer;
+  display: flex;
+  padding: 1px;
 }
 
 .selected-image{
@@ -505,12 +508,20 @@ text-align: end;
   align-items: center;
 }
 
-.product-detail-desc h4{
-  margin-top: 10px;
+.image-container{
+  width: fit-content;
+  float: left;
 }
 
-.product-detail-desc p{
+.product-detail-desc{
+  
+  float: right;
+  width: 60%;
+}
+
+.product-detail-desc h4, p{
   margin-top: 10px;
+
 }
 
 .reviews p{
@@ -581,6 +592,7 @@ text-align: end;
 .quantity-desc{
   border: 1px solid gray;
   padding: 6px;
+  width: fit-content;
 }
 
 .quantity-desc span{
@@ -605,7 +617,9 @@ text-align: end;
 }
 
 .maylike-products-wrapper{
-  margin-top: 120px;
+  margin-top: 350px;
+  width: fit-content;
+  height: 50%;
 }
 
 .maylike-products-wrapper h2{
@@ -619,7 +633,7 @@ text-align: end;
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 2px;
 }
 
 .max-qty{
